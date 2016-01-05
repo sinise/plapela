@@ -1,0 +1,69 @@
+<script  type="text/javascript" src="../js/lib/jQCloud/dist/jqcloud.min.js"></script>
+<link rel="stylesheet" href="../js/lib/jQCloud/dist/jqcloud.min.css">
+
+<div class="container-fluid">
+
+ 	<div class="col-lg-12">
+			<div id="wordcloud" style="width: 540px; height: 240px; position: relative;"></div>
+			<script type="text/javascript">
+				var word_list = [
+				{text: "Java", weight: 8},
+				{text: "JavaScript", weight: 4,},
+				{text: "Python", weight: 6},
+				{text: "PHP", weight: 9},
+				{text: "C", weight: 10},
+				{text: "MongoDB", weight: 5},
+				{text: "Express", weight: 3},
+				{text: "AngularJS", weight: 4},
+				{text: "Node.js", weight: 6},
+				{text: "GIT", weight: 2},
+				{text: "VmWare", weight: 2},
+				{text: "Docker", weight: 4},
+				{text: "Bootstrap", weight: 3},
+				{text: "Joomla", weight: 2},
+				{text: "jquery", weight: 2},
+				{text: "CSS3", weight: 5},
+				{text: "Responsive", weight: 6},
+				{text: "Raspberry Pi", weight: 3},
+        {text: "JSON", weight: 4},
+        {text: "MVC", weight: 6},
+        {text: "REST", weight: 7},
+        {text: "DNS", weight: 8},
+        {text: "nginx", weight: 4},
+        {text: "Linux", weight: 7},
+			   	];
+			   $(document).ready(function() {
+			   	 $("#wordcloud").css("width", "100%")
+			   	$("#wordcloud").jQCloud(word_list, {autoResize: true});
+			   });
+			</script>
+	</div>
+
+</div>
+<div class="container marketing">
+	<!-- Three columns of text below the carousel -->
+	<div class="row">
+		<div class="col-lg-6">
+			
+			<h2>Freelance konsulent og software udvikling</h2>
+			<p>Lapela er en it konsulent og software udviklings virksomhed. Virksomheden blev startet i 2012 af Sebastian O. Jensen. Vi lægger vi stor vægt på at levere kvalitet og yde en god service. Dette gør vi bl.a. ved at benytte vores netværk af samarbejdsparnerer som er ekperter på deres områder.</p>
+		</div><!-- /.col-lg-4 -->
+
+		<div class="col-lg-6">
+			<h2>Teknologier</h2>
+			Vi stolte af at kunne sige vi er nørder på vores område og når vi skal vælge værktøjer tro vi ikke på one size fits it all. Forskelige opgaver kræver forskelige løsninger. Derfor er vi ikke bange for at sætte os ind i nye værktøjer og teknologier. Når det er sagt er der nogle teknologier vi er specielt stærke i. Af dise kan f.eks. nævnes:<br>
+			<ul>
+				<li>Java, JavaScript, Python, PHP, C</li>
+				<li>MongoDB, Express, AngularJS, Nodejs</li>
+				<li>VMware, Linux, EC2, Docker, GIS</li>
+				<li>SQL, Raspberry Pi, Bootstrap, Joomla, Wordpress</li>
+			</ul>
+			</p>
+
+			<p>Vores stærke tekniske fundament, ambitioner, nysgerrighed og vedvarende lyst til nye udfordringer skal dog ikke stå i vejen for fremtidige opgaver, der ikke passer ind overstående.
+			</p>
+		</div><!-- /.col-lg-4 -->
+	</div><!-- /.row -->
+<script>
+  ga('send', 'pageview', '/om');
+</script>
