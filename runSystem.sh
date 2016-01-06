@@ -10,7 +10,7 @@ cd ~/plapela
 #docker run --name thisMongo -v ~/port/mongoVol:/data/db -it -d mongo:latest
 #docker stop lapela
 #docker rm lapela
-docker run -d --name lapela -e VIRTUAL_HOST=test.lapela.dk -e PAGESPEED=1 -it -v ~/plapela/lapela:/www seeeb/lapela
+docker run -d --name lapela -e VIRTUAL_HOST=lapela.dk -e PAGESPEED=1 -it -v ~/plapela/lapela:/www seeeb/lapela
 
 #docker run  --name nodejs -p 80:80 -it -v ~/plapela/lapela:/www seeeb/lapela
 #docker run -d --name nodejs --link thisMongo:db -p 80:80 -it -v ~/port/port:/www seeeb/port
