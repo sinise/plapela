@@ -7,8 +7,9 @@ RUN sudo tar -C /usr/local --strip-components 1 -xzf node*
 RUN npm install express -g
 RUN npm install express-generator -g
 RUN npm install -g nodemon
+RUN npm install -g forever
 
-#WORKDIR /www
+WORKDIR /www
 
 CMD /www/start.sh
 EXPOSE 80:80
