@@ -7,7 +7,6 @@ var bodyParser = require('body-parser');
 var fs = require('fs');
 var routes = require('./routes/index');
 var users = require('./routes/users');
-
 var h5bp = require('h5bp');
 var app = express();
 var logStream = fs.createWriteStream('logs/access.log',{flags: 'a'});
@@ -19,6 +18,7 @@ app.set('view engine', 'jade');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+
 if (app.get('env') == 'production') {
   app.use(logger('common', {stream: logStream}))
 } else {
