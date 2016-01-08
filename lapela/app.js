@@ -8,7 +8,14 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
+var h5bp = require('h5bp');
 var app = express();
+
+app.use(h5bp({ root: __dirname + '/public' }));
+ 
+// in order to serve files, you should add the two following middlewares 
+app.use(express.static(__dirname + '/public'));
+app.listen(3000);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
