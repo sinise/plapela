@@ -12,7 +12,7 @@ var h5bp = require('h5bp');
 var app = express();
 var logStream = fs.createWriteStream('logs/access.log',{flags: 'a'});
 
-app.use(h5bp({ root: __dirname + '/public' }));
+//app.use(h5bp({ root: __dirname + '../public' }));
  
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -21,7 +21,7 @@ app.set('view engine', 'jade');
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 if (app.get('env') == 'production') {
-app.use(logger('common', {stream: logStream}))
+  app.use(logger('common', {stream: logStream}))
 } else {
   app.use(logger('dev'));
 }
