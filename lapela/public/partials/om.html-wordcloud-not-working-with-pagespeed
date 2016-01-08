@@ -1,3 +1,44 @@
+<--<script  data-pagespeed-no-defer type="text/javascript" src="/js/lib/jQCloud/dist/jqcloud.min.js"></script>
+<link rel="stylesheet" href="/js/lib/jQCloud/dist/jqcloud.min.css">
+<div class="container-fluid">
+
+ 	<div class="col-lg-12">
+			<div id="wordcloud" style="width: 540px; height: 240px; position: relative;"></div>
+			<script type="text/javascript">
+				var word_list = [
+				{text: "Java", weight: 8},
+				{text: "JavaScript", weight: 4,},
+				{text: "Python", weight: 6},
+				{text: "PHP", weight: 9},
+				{text: "C", weight: 10},
+				{text: "MongoDB", weight: 5},
+				{text: "Express", weight: 3},
+				{text: "AngularJS", weight: 4},
+				{text: "Node.js", weight: 6},
+				{text: "GIT", weight: 2},
+				{text: "VmWare", weight: 2},
+				{text: "Docker", weight: 4},
+				{text: "Bootstrap", weight: 3},
+				{text: "Joomla", weight: 2},
+				{text: "jquery", weight: 2},
+				{text: "CSS3", weight: 5},
+				{text: "Responsive", weight: 6},
+				{text: "Raspberry Pi", weight: 3},
+        {text: "JSON", weight: 4},
+        {text: "MVC", weight: 6},
+        {text: "REST", weight: 7},
+        {text: "DNS", weight: 8},
+        {text: "nginx", weight: 4},
+        {text: "Linux", weight: 7},
+			   	];
+			   $(document).ready(function() {
+			   	 $("#wordcloud").css("width", "100%")
+			   	$("#wordcloud").jQCloud(word_list, {autoResize: true});
+			   });
+			</script>
+	</div>
+
+</div>-->
 <div class="container marketing">
 	<!-- Three columns of text below the carousel -->
 	<div class="row">
