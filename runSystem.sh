@@ -8,8 +8,8 @@ cd ~/plapela
 #docker build -t seeeb/lapela .
 #docker pull mongo
 #docker run-d --name thisMongo -v ~/port/mongoVol:/data/db -it -d mongo:latest
-#docker stop lapela
-#docker rm lapela
+docker stop lapela
+docker rm lapela
 docker run -d --name lapela -e VIRTUAL_HOST=lapela.dk -e PAGESPEED=1 -it -v ~/plapela/lapela:/www seeeb/lapela
 
 #docker run  --name nodejs -p 80:80 -it -v ~/plapela/lapela:/www seeeb/lapela
